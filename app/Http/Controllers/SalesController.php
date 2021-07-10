@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Solids\InterfaceSegregation\MemberTasks;
 use App\Solids\OpenClose\User;
 use App\Solids\OpenClose\UserData;
 use App\Solids\OpenClose\UsersData;
@@ -26,6 +27,11 @@ class SalesController extends Controller
     public function getUserDataLiskov()
     {
         return (new \App\Solids\LiskovSubstitution\User())->getData(new \App\Solids\LiskovSubstitution\UserData());
+    }
+
+    public function Segregation()
+    {
+        return (new MemberTasks())->Tasks(new \App\Solids\InterfaceSegregation\Moderator());
     }
 
 }

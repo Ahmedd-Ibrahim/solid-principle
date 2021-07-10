@@ -27,3 +27,5 @@ Route::get('test', [SalesController::class, 'index']);
 Route::get('user-data', [SalesController::class, 'getUserData']);
 
 Route::get('user-data-liskov', [SalesController::class, 'getUserDataLiskov']);
+
+Route::get('segregation', [SalesController::class, 'Segregation']);
