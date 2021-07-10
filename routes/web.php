@@ -23,3 +23,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('test', [SalesController::class, 'index']);
+
+Route::get('user-data', [SalesController::class, 'getUserData']);
