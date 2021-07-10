@@ -22,4 +22,10 @@ class SalesController extends Controller
     {
         return (new User())->getData(new UsersData());
     }
+
+    public function getUserDataLiskov()
+    {
+        return (new \App\Solids\LiskovSubstitution\User())->getData(new \App\Solids\LiskovSubstitution\UserData());
+    }
+
 }
