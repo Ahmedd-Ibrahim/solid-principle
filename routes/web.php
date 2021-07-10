@@ -25,3 +25,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('test', [SalesController::class, 'index']);
 
 Route::get('user-data', [SalesController::class, 'getUserData']);
+
+Route::get('user-data-liskov', [SalesController::class, 'getUserDataLiskov']);
